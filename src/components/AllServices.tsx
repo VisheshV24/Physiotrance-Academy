@@ -50,21 +50,21 @@ export default function AllServices() {
       link: "https://chat.whatsapp.com/Jm6Plj1iMYFKe6ExqAORDK?mode=hqrt1"
     },
     {
-      name: "PhysioTrance Community",
+      name: "Physiotrance Academy E-Learning & Webinars",
       link: "https://chat.whatsapp.com/CtkYKqZMIxfKxXNwBkc7pf"
     },
     {
-      name: "Speciality Network Hub",
+      name: "Physio Rehab Study Materials",
       link: "https://chat.whatsapp.com/HGZ8RDwOzOcIP85LCdUBAd?mode=hqrt1"
     }
   ];
 
   // Animation hooks for different sections
-  const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation({ threshold: 0.2 });
-  const { ref: servicesRef, isVisible: servicesVisible } = useScrollAnimation({ threshold: 0.1 });
-  const { ref: otherServicesRef, isVisible: otherServicesVisible } = useScrollAnimation({ threshold: 0.1 });
-  const { ref: buttonRef, isVisible: buttonVisible } = useScrollAnimation({ threshold: 0.2 });
-  const { ref: groupsRef, isVisible: groupsVisible } = useScrollAnimation({ threshold: 0.1 });
+  const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation<HTMLHeadingElement>({ threshold: 0.2 });
+  const { ref: servicesRef, isVisible: servicesVisible } = useScrollAnimation<HTMLUListElement>({ threshold: 0.1 });
+  const { ref: otherServicesRef, isVisible: otherServicesVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.1 });
+  const { ref: buttonRef, isVisible: buttonVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.2 });
+  const { ref: groupsRef, isVisible: groupsVisible } = useScrollAnimation<HTMLDivElement>({ threshold: 0.1 });
 
   return (
     <section className="py-20 bg-white">
