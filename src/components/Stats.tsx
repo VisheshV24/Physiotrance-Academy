@@ -57,7 +57,7 @@ const stats: Stat[] = [
   },
   {
     icon: FileCheck,
-    value: '10,000+',
+    value: '10000+',
     label: 'Publications Supported',
   },
   {

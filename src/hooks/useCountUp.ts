@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export function useCountUp(
-  end: number,
+  end: string | number,
   duration: number = 2000,
   start: number = 0,
   isVisible: boolean = false

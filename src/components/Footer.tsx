@@ -1,4 +1,4 @@
-import { Instagram, Star, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Star, Youtube } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
@@ -131,6 +131,14 @@ export default function Footer() {
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
               >
                 <Instagram className="h-5 w-5 transition-transform duration-300 hover:scale-125" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/physiotrance-academy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
+              >
+                <Linkedin className="h-5 w-5 transition-transform duration-300 hover:scale-125" />
               </a>
             </div>
 

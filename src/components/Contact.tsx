@@ -11,7 +11,7 @@ const contactItems: ContactItem[] = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'aimphysioentrance2023@gmail.com',
+    content: 'director@physiotranceacademy.com',
   },
   {
     icon: Phone,
