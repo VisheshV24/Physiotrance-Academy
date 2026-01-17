@@ -33,7 +33,7 @@ export default function Navbar() {
     <>
       {/* TOP SLIM ISO BANNER */}
       <div className="w-full bg-teal-600 text-white text-center text-sm py-1 fixed top-0 z-50 shadow">
-        ✔️ ISO 9001:2015 Certified &nbsp; | &nbsp; ✔️ Govt. Registered &nbsp; | &nbsp; ✔️ Trusted by 500+ Clients
+        ✔️ ISO 9001:2015 Certified &nbsp; | &nbsp; ✔️ Govt. Registered &nbsp; | &nbsp; ✔️ Trusted by 500+ Researchers
       </div>
 
       {/* NAVBAR */}
