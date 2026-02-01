@@ -5,6 +5,8 @@ import Hero from './components/Home';
 import FacultyServices from './components/FacultyServices';
 import Services from './components/Services';
 import About from './components/About';
+import ExecutiveCommittee from './components/ExecutiveCommittee';
+import Certifications from './components/Certifications';
 import Stats from './components/Stats';
 import Process from './components/Process';
 import CTA from './components/CTA';
@@ -26,6 +28,8 @@ function App() {
               <FacultyServices />
               <Services />
               <About />
+              <ExecutiveCommittee />
+              <Certifications />
               <Stats />
               <Process />
               <CTA />

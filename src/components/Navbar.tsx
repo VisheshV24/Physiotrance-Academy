@@ -39,7 +39,7 @@ export default function Navbar() {
       {/* NAVBAR */}
       <nav className="bg-white shadow-md fixed w-full top-6 z-40 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex items-center h-16">
             <button
               onClick={() => {
                 if (location.pathname !== '/') {
@@ -56,7 +56,7 @@ export default function Navbar() {
               </span>
             </button>
 
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8 ml-auto">
               <button
                 onClick={() => scrollToSection('home')}
                 className="text-gray-700 hover:text-teal-600 transition-all duration-300 relative group"
@@ -76,6 +76,13 @@ export default function Navbar() {
                 className="text-gray-700 hover:text-teal-600 transition-all duration-300 relative group"
               >
                 About
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
+              </button>
+              <button
+                onClick={() => scrollToSection('executive-committee')}
+                className="text-gray-700 hover:text-teal-600 transition-all duration-300 relative group"
+              >
+                Executive Committee
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
@@ -126,6 +133,9 @@ export default function Navbar() {
               </button>
               <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-gray-700 hover:bg-teal-50 rounded">
                 About
+              </button>
+              <button onClick={() => scrollToSection('executive-committee')} className="block w-full text-left px-3 py-2 text-gray-700 hover:bg-teal-50 rounded">
+                Executive Committee
               </button>
               <button onClick={() => scrollToSection('process')} className="block w-full text-left px-3 py-2 text-gray-700 hover:bg-teal-50 rounded">
                 Process
