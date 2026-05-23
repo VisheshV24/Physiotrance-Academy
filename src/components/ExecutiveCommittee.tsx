@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { GraduationCap, Award, Briefcase } from 'lucide-react';
+import { GraduationCap, Award, Briefcase, Mail, Phone } from 'lucide-react';
 import rupamSarkarImage from '../assets/rupam_sarkar.png';
 import taniyaVaidyaImage from '../assets/taniya_vaidya.jpeg';
 
@@ -10,6 +10,8 @@ interface CommitteeMember {
   role: string;
   image: string;
   fallbackInitials: string;
+  email?: string;
+  phone?: string;
 }
 
 const members: CommitteeMember[] = [
@@ -20,6 +22,8 @@ const members: CommitteeMember[] = [
     role: 'Assistant Professor',
     image: rupamSarkarImage,
     fallbackInitials: 'RS',
+    email: 'director@physiotranceacademy.com',
+    phone: '+91 9564736713',
   },
   {
     name: 'Dr. Taniya Vaidya',
@@ -113,6 +117,29 @@ export default function ExecutiveCommittee() {
                     {member.role}
                   </p>
                 </div>
+
+                {(member.email || member.phone) && (
+                  <div className="mt-3 pt-3 border-t border-gray-100 space-y-2">
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-600 transition-colors min-w-0"
+                      >
+                        <Mail className="h-4 w-4 text-teal-500 flex-shrink-0" />
+                        <span className="truncate">{member.email}</span>
+                      </a>
+                    )}
+                    {member.phone && (
+                      <a
+                        href={`tel:${member.phone.replace(/\s/g, '')}`}
+                        className="flex items-center gap-2 text-sm text-gray-600 hover:text-teal-600 transition-colors"
+                      >
+                        <Phone className="h-4 w-4 text-teal-500 flex-shrink-0" />
+                        <span>{member.phone}</span>
+                      </a>
+                    )}
+                  </div>
+                )}
 
                 {/* Decorative line */}
                 <div className="mt-4 h-1 w-16 bg-gradient-to-r from-teal-600 to-teal-400 rounded-full transition-all duration-300 group-hover:w-full"></div>
