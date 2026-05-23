@@ -56,6 +56,14 @@ export default function AllServices() {
     {
       name: "Physio Rehab Study Materials",
       link: "https://chat.whatsapp.com/HGZ8RDwOzOcIP85LCdUBAd?mode=hqrt1"
+    },
+    {
+      name: "Physiotrance: Faculty Development Academy",
+      link: "https://chat.whatsapp.com/DnCNsCMggVC73wx2GxsFct"
+    },
+    {
+      name: "Govt. Funded Academic Course Updates",
+      link: "https://chat.whatsapp.com/EZYUd3IIjfPFc26JAjRTtn"
     }
   ];
 
